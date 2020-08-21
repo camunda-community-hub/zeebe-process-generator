@@ -44,6 +44,7 @@
 		<nexus.release.repository>https://app.camunda.com/nexus/content/repositories/zeebe-io/</nexus.release.repository>
 
 		<version.junit>5.6.2</version.junit>
+		<version.zeebe>0.24.0</version.zeebe>
 
 		<plugin.version.surefire>3.0.0-M5</plugin.version.surefire>
 		<plugin.version.jacoco>0.8.5</plugin.version.jacoco>
@@ -62,6 +63,16 @@
 	</dependencyManagement>
 
 	<dependencies>
+		<dependency>
+			<groupId>io.zeebe</groupId>
+			<artifactId>zeebe-bpmn-model</artifactId>
+			<version>${version.zeebe}</version>
+		</dependency>
+		<dependency>
+			<groupId>info.picocli</groupId>
+			<artifactId>picocli</artifactId>
+			<version>4.5.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.assertj</groupId>
 			<artifactId>assertj-core</artifactId>
@@ -132,8 +143,8 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${plugin.version.surefire}</version>
 			</plugin>
-			
-			<!--  flaky test extractor plugin -->
+
+			<!-- flaky test extractor plugin -->
 			<plugin>
 				<groupId>io.zeebe</groupId>
 				<artifactId>flaky-test-extractor-maven-plugin</artifactId>
