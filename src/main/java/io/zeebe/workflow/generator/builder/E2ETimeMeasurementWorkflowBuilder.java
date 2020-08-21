@@ -22,7 +22,7 @@ public class E2ETimeMeasurementWorkflowBuilder implements WorkflowBuilder {
 
 	@Override
 	public BpmnModelInstance buildWorkflow(String processId) {
-		return Bpmn.createProcess(processId)
+		return Bpmn.createExecutableProcess(processId)
 				.startEvent()
 				.serviceTask("start-timer", this::configureStartTimer)
 				.callActivity("call-workflow-under-test", this::configurCallActivity)

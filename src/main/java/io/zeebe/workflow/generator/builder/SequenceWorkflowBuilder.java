@@ -20,7 +20,7 @@ public class SequenceWorkflowBuilder implements WorkflowBuilder {
 	@Override
 	public BpmnModelInstance buildWorkflow(String processId) {
 
-		StartEventBuilder workflowWorkInProgress = Bpmn.createProcess(processId).startEvent();
+		StartEventBuilder workflowWorkInProgress = Bpmn.createExecutableProcess(processId).startEvent();
 
 		ServiceTaskBuilder serviceTaskBuilder = null;
 
