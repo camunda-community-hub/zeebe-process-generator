@@ -45,7 +45,7 @@
 		<version.zeebe>0.24.3</version.zeebe>
 
 		<plugin.version.surefire>3.0.0-M5</plugin.version.surefire>
-		<plugin.version.jacoco>0.8.5</plugin.version.jacoco>
+		<plugin.version.jacoco>0.8.6</plugin.version.jacoco>
 	</properties>
 
 	<dependencyManagement>
