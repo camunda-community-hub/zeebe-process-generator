@@ -50,7 +50,7 @@ Optionally, you can also define a timeout. When the timeout is reached the workf
   -t, --timeout=<timeout>   Timeout after which workflow execution should be
                               aborted
       -wut, --workflow-under-test-id=<workflowUnderTestId>
-                            (Manadatory) ID of the workfow that should be
+                            (Mandatory) ID of the workfow that should be
                               measured
 ```
 
