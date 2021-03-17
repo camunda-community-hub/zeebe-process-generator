@@ -1,3 +1,5 @@
+[![Community badge: Incubating](https://img.shields.io/badge/Lifecycle-Incubating-blue)](https://github.com/Camunda-Community-Hub/community/blob/main/extension-lifecycle.md#incubating-)
+
 ## Zeebe Workflow Generator
 
 This project provides a tool to automatically generate workflows for [Zeebe](https://zeebe.io/).
