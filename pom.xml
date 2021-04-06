@@ -49,7 +49,7 @@
     </nexus.release.repository>
 
     <version.junit>5.7.1</version.junit>
-    <version.zeebe>0.26.2</version.zeebe>
+    <version.zeebe>1.0.0-SNAPSHOT</version.zeebe>
 
     <plugin.version.surefire>3.0.0-M5</plugin.version.surefire>
     <plugin.version.jacoco>0.8.6</plugin.version.jacoco>
