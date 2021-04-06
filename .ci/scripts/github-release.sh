@@ -2,11 +2,11 @@
 
 cd target
 
-export PROJECT_NAME="Zeebe Workflow Generator"
+export PROJECT_NAME="Zeebe Process Generator"
 export GITHUB_TOKEN=${GITHUB_TOKEN_PSW}
 export GITHUB_ORG=zeebe-io
-export GITHUB_REPO=zeebe-workflow-generator
-export ARTIFACT=zeebe-workflow-generator-${RELEASE_VERSION}.jar
+export GITHUB_REPO=zeebe-process-generator
+export ARTIFACT=zeebe-process-generator-${RELEASE_VERSION}.jar
 export CHECKSUM=${ARTIFACT}.sha1sum
 
 # create checksum files
