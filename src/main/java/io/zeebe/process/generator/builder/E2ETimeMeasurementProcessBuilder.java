@@ -2,10 +2,10 @@ package io.zeebe.process.generator.builder;
 
 import static java.util.Objects.requireNonNull;
 
-import io.zeebe.model.bpmn.Bpmn;
-import io.zeebe.model.bpmn.BpmnModelInstance;
-import io.zeebe.model.bpmn.builder.CallActivityBuilder;
-import io.zeebe.model.bpmn.builder.ServiceTaskBuilder;
+import io.camunda.zeebe.model.bpmn.Bpmn;
+import io.camunda.zeebe.model.bpmn.BpmnModelInstance;
+import io.camunda.zeebe.model.bpmn.builder.CallActivityBuilder;
+import io.camunda.zeebe.model.bpmn.builder.ServiceTaskBuilder;
 import java.util.Optional;
 
 public class E2ETimeMeasurementProcessBuilder implements ProcessBuilder {

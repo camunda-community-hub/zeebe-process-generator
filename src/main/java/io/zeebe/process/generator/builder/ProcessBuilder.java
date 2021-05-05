@@ -1,6 +1,6 @@
 package io.zeebe.process.generator.builder;
 
-import io.zeebe.model.bpmn.BpmnModelInstance;
+import io.camunda.zeebe.model.bpmn.BpmnModelInstance;
 
 public interface ProcessBuilder {
 

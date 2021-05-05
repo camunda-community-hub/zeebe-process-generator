@@ -1,7 +1,7 @@
 package io.zeebe.process.generator.cli;
 
-import io.zeebe.model.bpmn.Bpmn;
-import io.zeebe.model.bpmn.BpmnModelInstance;
+import io.camunda.zeebe.model.bpmn.Bpmn;
+import io.camunda.zeebe.model.bpmn.BpmnModelInstance;
 import java.util.concurrent.Callable;
 import picocli.CommandLine.ParentCommand;
 
