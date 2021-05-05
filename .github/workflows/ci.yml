@@ -2,6 +2,8 @@ name: Java CI
 on:
   pull_request: { }
   push: { }
+  release:
+    types: [ published ]
 jobs:
   build:
     name: Build, Test, and Verify
