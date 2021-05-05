@@ -1,6 +1,6 @@
 package io.zeebe.process.generator.cli;
 
-import io.zeebe.model.bpmn.BpmnModelInstance;
+import io.camunda.zeebe.model.bpmn.BpmnModelInstance;
 import io.zeebe.process.generator.builder.E2ETimeMeasurementProcessBuilder;
 import java.util.Optional;
 import picocli.CommandLine.Command;

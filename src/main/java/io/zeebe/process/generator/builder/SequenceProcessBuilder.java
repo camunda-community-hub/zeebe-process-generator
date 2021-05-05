@@ -1,9 +1,9 @@
 package io.zeebe.process.generator.builder;
 
-import io.zeebe.model.bpmn.Bpmn;
-import io.zeebe.model.bpmn.BpmnModelInstance;
-import io.zeebe.model.bpmn.builder.ServiceTaskBuilder;
-import io.zeebe.model.bpmn.builder.StartEventBuilder;
+import io.camunda.zeebe.model.bpmn.Bpmn;
+import io.camunda.zeebe.model.bpmn.BpmnModelInstance;
+import io.camunda.zeebe.model.bpmn.builder.ServiceTaskBuilder;
+import io.camunda.zeebe.model.bpmn.builder.StartEventBuilder;
 import java.util.Optional;
 
 public class SequenceProcessBuilder implements ProcessBuilder {
