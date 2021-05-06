@@ -36,6 +36,13 @@ jobs:
         if: failure()
         with:
           files: target/surefire-reports/*.xml
+      - name: Create Secrets
+        run: echo '${{ secrets.NEXUS_USR }} > ./nexus_usr'&&
+          echo ' ${{ secrets.NEXUS_PSW }} > ./nexus_psw' && 
+          echo ' ${{ secrets.MAVEN_CENTRAL_DEPLOYMENT_USR }} > ./maven_usr' &&
+          echo ' ${{ secrets.MAVEN_CENTRAL_DEPLOYMENT_PSW }} > ./maven_psw' &&
+          echo ' ${{ secrets.MAVEN_CENTRAL_GPG_SIGNING_KEY_PASSPHRASE }} > ./gpg_key' &&
+          echo ' ${{ secrets.GITHUB_TOKEN }} > /github_token && ls -la
       - name: Deploy SNAPSHOT / Release
         if: success()
         uses: camunda-community-hub/community-action-maven-release@v1
