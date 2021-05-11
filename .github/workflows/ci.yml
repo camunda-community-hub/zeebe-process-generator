@@ -8,6 +8,7 @@ name: Java CI
 on:
   pull_request: { }
   push: { }
+  workflow_dispatch: { }
   release:
     types: [ published ]
 jobs:
@@ -45,7 +46,8 @@ jobs:
         if: failure()
         with:
           files: target/surefire-reports/*.xml
-      - name: Deploy SNAPSHOT / Release
+      - if: github.event.release || github.event_name == 'workflow_dispatch'
+        name: Deploy SNAPSHOT / Release
         uses: camunda-community-hub/community-action-maven-release@v1
         with:
           release-version: ${{ github.event.release.tag_name }}
