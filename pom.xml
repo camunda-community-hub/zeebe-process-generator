@@ -50,7 +50,7 @@
     <version.zeebe>8.1.9</version.zeebe>
 
     <plugin.version.surefire>3.0.0-M9</plugin.version.surefire>
-    <plugin.version.jacoco>0.8.8</plugin.version.jacoco>
+    <plugin.version.jacoco>0.8.10</plugin.version.jacoco>
   </properties>
 
   <dependencyManagement>
